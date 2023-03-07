@@ -26,6 +26,7 @@ export const FormContainer = styled.div`
   font-size: 1.125rem;
   font-weight: bold;
   flex-wrap: wrap;
+  
 `;
 
 const BaseInput = styled.input`
@@ -50,6 +51,11 @@ const BaseInput = styled.input`
 
 export const TaskInput = styled(BaseInput)`
   flex: 1;
+
+  /* Eliminando seta de seleção */
+  &::-webkit-calendar-picker-indicator {
+    display: none !important;
+  }
 `;
 
 export const MinutesAmountInput = styled(BaseInput)`
