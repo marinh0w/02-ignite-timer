@@ -46,13 +46,13 @@ export function Home() {
     const id = String(new Date().getTime());
 
     const newCycle: Cycle = {
-      id:,
+      id,
       task: data.task,
       minutesAmount: data.minutesAmount,
     };
 
     setCycles((state) => [...state, newCycle]);
-    setActiveCycledID(id)
+    setActiveCycleId(id)
 
     reset();
   }
